@@ -10,7 +10,7 @@ type AuthHeaderInterface = React.FunctionComponent<{
 
 const AuthHeader: AuthHeaderInterface = ({ title, subtitle }) => {
 	return (
-		<header className="space-y-4 text-center form-select">
+		<header className="space-y-4 text-center">
 			<BrandLogo />
 			<div className="drop-shadow-sm">
 				<h1 className="flex flex-col text-2xl font-black">{title}</h1>
