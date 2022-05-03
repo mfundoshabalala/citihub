@@ -18,6 +18,9 @@
 # misc
 .DS_Store
 *.pem
+.history
+.vscode
+tsconfig.tsbuildinfo
 
 # debug
 npm-debug.log*
@@ -27,6 +30,9 @@ yarn-error.log*
 
 # local env files
 .env*.local
+.env
 
 # vercel
 .vercel
+
+
