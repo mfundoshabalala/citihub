@@ -7,6 +7,7 @@ import type { GetServerSideProps, NextPage } from 'next';
 import { supabase } from 'lib/client';
 import Image from 'next/image';
 import Icon from 'components/shared/Icon';
+import Head from 'next/head';
 
 const Profile: NextPage = () => {
 	const router = useRouter();
@@ -14,12 +15,15 @@ const Profile: NextPage = () => {
 		const user = supabase.auth.user();
 		console.log(user?.user_metadata);
 		if (!user) {
-			router.push('/login');
+			// router.push('/login');
 		}
 	}, [router]);
 
 	return (
 		<section className="h-full caret-transparent">
+			<Head>
+				<title>Profile: Mfundo Shabalala</title>
+			</Head>
 			<header className="drop-shadow-sm shadow-rose-900 text-center py-4">
 				<h1 className="text-4xl font-extrabold">Personal Information</h1>
 				<p className="font-light">Basic information, like your name and photo.</p>
