@@ -6,7 +6,7 @@ type AuthContainerInterface = React.FunctionComponent<{
 
 const AuthContainer: AuthContainerInterface = ({ children }) => {
 	return (
-		<section className="max-w-md px-6 py-10 mx-auto space-y-6 text-center border shadow-sm rounded-xl caret-transparent">
+		<section className="max-w-md px-6 py-10 mx-auto space-y-6 text-center border shadow-sm rounded-xl ">
 			{children}
 		</section>
 	);
