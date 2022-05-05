@@ -10,15 +10,16 @@ type BrandLogoInterface = React.FunctionComponent<{
 	alt?: string;
 	height?: number;
 	width?: number;
+	className?: string;
 }>;
 
-const BrandLogo: BrandLogoInterface = ({ href, image, alt, height, width }) => (
+const BrandLogo: BrandLogoInterface = ({ href, image, alt, height, width, className }) => (
 	<Link href={`${href ?? '/'}`} passHref>
 		<Image
 			src={image ?? CitiLogo}
 			width={width ?? 200}
 			height={height ?? 100}
-			className="relative cursor-pointer"
+			className={`relative cursor-pointer ${className}`}
 			alt={`${alt ?? 'CapaCiti logo'}`}
 		/>
 	</Link>
