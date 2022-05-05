@@ -9,7 +9,7 @@ class MyDocument extends Document {
 		return (
 			<Html lang="en" className="scroll-smooth">
 				<Head />
-				<body className="antialiased leading-normal text-zinc-700">
+				<body className="antialiased leading-normal text-zinc-700 caret-transparent">
 					<Main />
 					<NextScript />
 				</body>
