@@ -2,7 +2,7 @@ name: Node Continuous Deployment
 
 on:
   push:
-    branches: [main]
+    branches: [main, ci/cd-test]
 
 jobs:
   deploy:
