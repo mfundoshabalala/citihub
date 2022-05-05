@@ -4,7 +4,7 @@ import React from 'react';
 
 type IconInterface = React.FunctionComponent<{
 	icon: string;
-	style?: 'solid' | 'brands';
+	style?: 'solid' | 'brands' | 'regular';
 	href?: string;
 	size?: string;
 	className?: string;
