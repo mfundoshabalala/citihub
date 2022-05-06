@@ -1,4 +1,4 @@
-name: Vercel CD
+name: Vercel Continuous Deployment
 
 on:
   push:
@@ -8,11 +8,16 @@ on:
     branches: [main, ci/cd-test]
 
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-  build:
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 16
+      - run: npm install
+      - run: npm run build
+  deploy:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
