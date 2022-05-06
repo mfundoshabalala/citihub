@@ -5,7 +5,7 @@ on:
     branches: [main, ci/cd-test]
 
 jobs:
-  name: vercel_build
+  - name: vercel_build
   build:
     runs-on: ubuntu-latest
     steps:
