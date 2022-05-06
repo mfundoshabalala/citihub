@@ -1,16 +1,19 @@
-name: Node Continuous Deployment
+name: Vercel Continuous Deployment
 
 on:
   push:
-    branches: [main]
+    branches: [main, develop, "feature/"]
+
+  pull_request:
+    branches: [main, develop, "feature/"]
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@master
-      - uses: actions/setup-node@master
+      - uses: actions/checkout@v2
+      - uses: amondnet/vercel-action@v20
         with:
-          node-version: 16
-      - run: npm ci
-      - run: npm run build
+          vercel-token: ${{ secrets.VERCEL_TOKEN }}
+          vercel-org-id: ${{ secrets.VERCEL_ORG_ID }}
+          vercel-project-id: ${{ secrets.VERCEL_PROJ_ID }}
