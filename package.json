@@ -11,7 +11,7 @@
 		"lint:fix": "next lint --fix",
 		"type-check": "tsc --pretty --noEmit",
 		"format": "prettier --write .",
-		"test": "jest",
+		"test": "jest --passWithNoTests",
 		"test-all": "npm run lint && npm run type-check && npm run test"
 	},
 	"dependencies": {
