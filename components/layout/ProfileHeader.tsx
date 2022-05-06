@@ -7,9 +7,9 @@ import ProfileHeaderIconPanel from 'components/ProfileHeaderIconPanel';
 const ProfileHeader = () => {
 	return (
 		<section className="relative pb-10 text-white shadow h-72 bg-gradient-to-r from-slate-900 to-slate-700">
-			<div className="container flex items-center h-full mx-auto px-28 gap-x-10">
+			<div className="container flex items-center h-full mx-auto  px-4 md:px-28 gap-x-4 sm:gap-x-7 md:gap-x-10">
 				<Image
-					className="w-5 h-5 rounded-full"
+					className="w-5 h-5 rounded-full hidden lg:block"
 					src={
 						'https://media-exp1.licdn.com/dms/image/C5603AQFr8C2MPt2jKA/profile-displayphoto-shrink_200_200/0/1629806298987?e=1657152000&v=beta&t=UAGFXRH2FW7T9bbxCe8oddonc0fd0V22MB_byv3usoc'
 					}
