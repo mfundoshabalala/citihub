@@ -2,7 +2,9 @@ name: Vercel Continuous Deployment
 
 on:
   push:
-    branches: [main, ci/cd-test]
+    # branches: [main, ci/cd-test]
+    ignore-branches:
+      - main
 
   pull_request:
     branches: [main, ci/cd-test]
