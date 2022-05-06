@@ -33,7 +33,7 @@ const AuthForm = () => {
 			<Button
 				type="submit"
 				title="Login Account"
-				className="w-full mt-3 text-white bg-teal-600 hover:bg-teal-700 active:bg-teal-900"
+				className="w-full mt-3 text-white bg-gradient-to-r from-slate-800 to-slate-900"
 			/>
 		</Form>
 	);
