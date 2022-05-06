@@ -23,6 +23,7 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: 16
+      - run: npm install
       - run: npm run test
         env:
           NEXT_PUBLIC_SUPABASE_URL: ${{ secrets.NEXT_PUBLIC_SUPABASE_URL }}
@@ -35,8 +36,5 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: 16
+      - run: npm install
       - run: npm run lint
-        env:
-          NEXT_PUBLIC_SUPABASE_URL: ${{ secrets.NEXT_PUBLIC_SUPABASE_URL }}
-          NEXT_PUBLIC_SUPABASE_ANON_KEY: ${{ secrets.NEXT_PUBLIC_SUPABASE_ANON_KEY }}
-
