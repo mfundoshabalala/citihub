@@ -3,30 +3,3 @@ name: Vercel CD
 on:
   push:
     branches: [main, ci/cd-test]
-
-jobs:
-  - name: vercel_build
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
-        with:
-          node-version: 16
-      - run: npm ci
-      - run: npm run build
-        # with:
-        #   NEXT_PUBLIC_SUPABASE_URL: ${{secrets.NEXT_PUBLIC_SUPABASE_URL}}
-        #   NEXT_PUBLIC_SUPABASE_ANON_KEY: ${{secrets.NEXT_PUBLIC_SUPABASE_ANON_KEY}}
-
-  # name: vercel_deploy
-  # deploy:
-  #   runs-on: ubuntu-latest
-  #   steps:
-  #     - uses: actions/checkout@master
-  #     - uses: amondnet/vercel-action@v19
-  #       with:
-  #         scope: ${{ secrets.ORG_ID}}
-  #         vercel-token: ${{ secrets.VERCEL_TOKEN }}
-  #         vercel-org-id: ${{ secrets.ORG_ID}}
-  #         vercel-project-id: ${{ secrets.PROJECT_ID}}
