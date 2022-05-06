@@ -2,9 +2,9 @@ name: Vercel Continuous Integration
 
 on:
   push:
-    branches: [main, develop, ci/cd-test]
+    branches: [main, develop, "feature/"]
   pull_request:
-    branches: [main, develop, ci/cd-test]
+    branches: [main, develop, "feature/"]
 
 jobs:
   test:

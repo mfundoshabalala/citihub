@@ -2,10 +2,9 @@ name: Vercel Continuous Deployment
 
 on:
   push:
-    branches: [main, develop, ci/cd-test]
-
+    branches: [main, develop, "feature/"]
   pull_request:
-    branches: [main, develop, ci/cd-test]
+    branches: [main, develop, "feature/"]
 
 jobs:
   deploy:
@@ -17,4 +16,3 @@ jobs:
           vercel-token: ${{ secrets.VERCEL_TOKEN }}
           vercel-org-id: ${{ secrets.VERCEL_ORG_ID }}
           vercel-project-id: ${{ secrets.VERCEL_PROJ_ID }}
-
