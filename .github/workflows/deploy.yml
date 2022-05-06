@@ -3,3 +3,10 @@ name: Vercel CD
 on:
   push:
     branches: [main, ci/cd-test]
+
+  pull_request:
+    branches: [main, ci/cd-test]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
