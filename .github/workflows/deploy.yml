@@ -8,6 +8,8 @@ on:
     branches: [main, ci/cd-test]
 
 jobs:
+  deploy:
+    runs-on: ubuntu-latest
   build:
     runs-on: ubuntu-latest
     steps:
