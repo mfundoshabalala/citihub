@@ -2,7 +2,9 @@ name: Vercel Continuous Integration
 
 on:
   push:
-    branches: [main, ci/cd-test]
+    branches: [main, dev]
+  pull_request:
+    branches: [main, dev]
 
 jobs:
   node_integration:
