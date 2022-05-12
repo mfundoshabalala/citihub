@@ -14,6 +14,7 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: 16
+      - name: dependencies install
       - run: npm install
       - run: npm run lint
       - run: npm run test
