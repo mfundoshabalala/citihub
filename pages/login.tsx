@@ -6,11 +6,11 @@ import { GetServerSideProps, NextPage } from 'next';
 import { supabase } from 'lib/client';
 // component import
 import Layout from 'components/Layout';
-import AuthLogin from 'components/layout/AuthLogin';
+import AuthentificationLogin from 'components/layout/AuthentificationLogin';
 
 const Login: NextPage = () => (
 	<Layout>
-		<AuthLogin />
+		<AuthentificationLogin />
 	</Layout>
 );
 
