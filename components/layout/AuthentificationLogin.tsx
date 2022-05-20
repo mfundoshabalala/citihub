@@ -8,15 +8,13 @@ import AuthentificationContainer from 'components/shared/AuthentificationContain
 import AuthentificationForm from './AuthentificationForm';
 import AuthentificationProviderPanel from './AuthentificationProviderPanel';
 
-const AuthentificationLogin = () => {
-	return (
-		<AuthentificationContainer>
-			<AuthentificationHeader title="CapaCiTi Hub" subtitle="Login to your account." />
-			<AuthentificationForm page="Login" />
-			<AuthentificationProviderPanel />
-			<AuthentificationFooter heading="Not a registered member?" href="/register" title="register" />
-		</AuthentificationContainer>
-	);
-};
+const AuthentificationLogin = () => (
+	<AuthentificationContainer>
+		<AuthentificationHeader title="CapaCiTi Hub" subtitle="Login to your account." />
+		<AuthentificationForm page="Login" />
+		<AuthentificationProviderPanel />
+		<AuthentificationFooter heading="Not a registered member?" href="/register" title="register" />
+	</AuthentificationContainer>
+);
 
 export default AuthentificationLogin;
