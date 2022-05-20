@@ -3,13 +3,13 @@ import React from 'react';
 // component import
 import LocalLink from './LocalLink';
 
-type AuthFooterInterface = React.FunctionComponent<{
+type AuthentificationFooterInterface = React.FunctionComponent<{
 	heading: string;
 	title: string;
 	href: string;
 }>;
 
-const AuthFooter: AuthFooterInterface = ({ heading, title, href }) => {
+const AuthentificationFooter: AuthentificationFooterInterface = ({ heading, title, href }) => {
 	return (
 		<footer className="flex items-center justify-center px-4 text-sm italic gap-x-2">
 			<span className="">{heading}</span>
@@ -18,4 +18,4 @@ const AuthFooter: AuthFooterInterface = ({ heading, title, href }) => {
 	);
 };
 
-export default AuthFooter;
+export default AuthentificationFooter;

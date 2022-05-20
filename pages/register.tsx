@@ -6,11 +6,11 @@ import { GetServerSideProps, NextPage } from 'next';
 import { supabase } from 'lib/client';
 // component import
 import Layout from 'components/Layout';
-import AuthRegister from 'components/layout/AuthRegister';
+import AuthentificationRegister from 'components/layout/AuthentificationRegister';
 
 const Register: NextPage = () => (
 	<Layout>
-		<AuthRegister />
+		<AuthentificationRegister />
 	</Layout>
 );
 

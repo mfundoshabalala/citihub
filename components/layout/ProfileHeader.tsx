@@ -22,7 +22,7 @@ const ProfileHeader = () => {
 					<h1 className="text-3xl font-light leading-none">Mfundo Shabalala</h1>
 					<div className="flex items-center mb-4 gap-x-2 ">
 						<i className="fa fa-briefcase" />
-						<h2 className="text-lg font-light">Tech Champ at Capaciti</h2>
+						<h2 className="text-lg font-light">Tech Champ at CapaCiTi</h2>
 					</div>
 					<p className="font-thin leading-tight text-justify text-gray-400 max-w-prose">
 						Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum nulla quod accusantium aliquam

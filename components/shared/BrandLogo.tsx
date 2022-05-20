@@ -20,7 +20,7 @@ const BrandLogo: BrandLogoInterface = ({ href, image, alt, height, width, classN
 			width={width ?? 200}
 			height={height ?? 100}
 			className={`relative cursor-pointer ${className}`}
-			alt={`${alt ?? 'CapaCiti logo'}`}
+			alt={`${alt ?? 'CapaCiTi logo'}`}
 		/>
 	</Link>
 );

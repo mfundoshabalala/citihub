@@ -4,7 +4,7 @@ import { ApiError } from '@supabase/supabase-js';
 import { supabase } from 'lib/client';
 import { useRouter } from 'next/router';
 
-const useAuthForm = () => {
+const useAuthentificationForm = () => {
 	const [email, setEmail] = useState<string>('');
 	const [password, setPassword] = useState<string>('');
 	const [error, setError] = useState<ApiError | null>(null);
@@ -49,4 +49,4 @@ const useAuthForm = () => {
 	return { email, password, error, handleInputChange, handleSubmit };
 };
 
-export default useAuthForm;
+export default useAuthentificationForm;
