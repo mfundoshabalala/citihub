@@ -1,14 +1,14 @@
 //
+import Head from 'next/head';
 import { NextPage } from 'next';
 //
 import { useAuth } from 'lib/auth';
 //
 import Layout from 'components/Layout';
 import Flex from 'components/shared/Flex';
-import Button from 'components/shared/Button';
-import LocalLink from 'components/shared/LocalLink';
-import Head from 'next/head';
 import BrandLogo from 'components/shared/BrandLogo';
+import WelcomeHeader from 'components/WelcomeHeader';
+import LinksButtonPanel from 'components/LinksButtonPanel';
 
 const Home: NextPage = () => {
 	const context = useAuth();
@@ -20,48 +20,39 @@ const Home: NextPage = () => {
 			</Head>
 			<Layout>
 				{context?.user && (
-					<Flex className="flex-col justify-center items-center gap-y-10">
-						<BrandLogo />
-						<h1 className="text-4xl capitalize font-black drop-shadow">
-							<span className="">Welcome back </span>
-							<span className="">
-								<span className="">CiTi</span>
-								<span className="">zen.</span>
-							</span>
-						</h1>
-						<code className="font-thin text-orange-50 drop-shadow shadow-inner w-fit capitalize px-6 py-4 rounded bg-slate-800">
-							{context?.user?.role}
-						</code>
-						<Flex className="items-center justify-center gap-x-4 drop-shadow">
-							<LocalLink
+					<Flex className="flex-col items-center justify-center">
+						<BrandLogo width={250} height={125} />
+						<WelcomeHeader />
+						<LinksButtonPanel>
+							<LinksButtonPanel.Link
 								href="/profile"
-								title="My profile"
-								className="hover:scale-110 active:scale-100 px-6 py-2 border border-orange-200 rounded shadow shadow-orange-100 hover:border-orange-600 active:bg-orange-400 active:text-white"
+								title="profile"
+								className="transition-all duration-300 border-0 active:scale-95 px-8 py-2 font-bold text-white rounded active:shadow-sm shadow-lg min-w-[150px] bg-gradient-to-r from-orange-800 via-orange-700 to-orange-800"
 							/>
-							<Button
+							<LinksButtonPanel.Button
 								title="Logout"
 								onClick={context?.signOut}
-								className="text-white bg-violet-600 hover:bg-violet-700 active:bg-violet-900 active:shadow-sm"
+								className="transition-all duration-300 border-0 active:scale-95 px-8 py-2 font-bold text-white rounded active:shadow-sm shadow-lg min-w-[150px] bg-gradient-to-r from-purple-800 via-purple-700 to-purple-800"
 							/>
-						</Flex>
+						</LinksButtonPanel>
 					</Flex>
 				)}
 				{!context?.user && (
-					<Flex className="flex-col items-center gap-y-10">
-						<BrandLogo />
-						<h1 className="text-4xl capitalize font-black drop-shadow">Welcome to the CiTizen&apos;s Hub!</h1>
-						<div className="flex gap-x-8">
-							<LocalLink
-								className="px-8 py-2 text-white bg-violet-600 rounded shadow"
+					<Flex className="flex-col items-center justify-center">
+						<BrandLogo width={250} height={125} />
+						<WelcomeHeader />
+						<LinksButtonPanel>
+							<LinksButtonPanel.Link
+								className="transition-all duration-300 border-0 active:scale-95 px-8 py-2 font-bold text-white rounded active:shadow-sm shadow-lg min-w-[150px] bg-gradient-to-r from-teal-800 via-teal-700 to-teal-800"
 								href="/login"
 								title="Login"
 							/>
-							<LocalLink
-								className="px-8 py-2 text-white bg-orange-600 rounded shadow"
+							<LinksButtonPanel.Link
+								className="transition-all duration-300 border-0 active:scale-95 px-8 py-2 font-bold text-white rounded active:shadow-sm shadow-lg min-w-[150px] bg-gradient-to-r from-slate-800 via-slate-700 to-slate-800"
 								href="/register"
 								title="Register"
 							/>
-						</div>
+						</LinksButtonPanel>
 					</Flex>
 				)}
 			</Layout>

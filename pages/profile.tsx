@@ -13,12 +13,12 @@ import ProfileCandidateInformation from 'components/layout/ProfileCandidateInfor
 const Profile: NextPage = () => {
 	const router = useRouter();
 	useEffect(() => {
-			const user = supabase.auth.user();
-			console.log(user?.user_metadata);
-			if (!user) {
-				router.push('/login');
-			}
-		}, [router]);
+		const user = supabase.auth.user();
+		console.log(user?.user_metadata);
+		if (!user) {
+			router.push('/login');
+		}
+	}, [router]);
 
 	return (
 		<ProfileLayout>
