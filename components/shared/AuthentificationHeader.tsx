@@ -3,12 +3,12 @@ import React from 'react';
 // component(s) import(s)
 import BrandLogo from './BrandLogo';
 
-type AuthHeaderInterface = React.FunctionComponent<{
+type AuthentificationHeaderInterface = React.FunctionComponent<{
 	title: string;
 	subtitle?: string;
 }>;
 
-const AuthHeader: AuthHeaderInterface = ({ title, subtitle }) => {
+const AuthentificationHeader: AuthentificationHeaderInterface = ({ title, subtitle }) => {
 	return (
 		<header className="space-y-4 text-center">
 			<BrandLogo />
@@ -20,4 +20,4 @@ const AuthHeader: AuthHeaderInterface = ({ title, subtitle }) => {
 	);
 };
 
-export default AuthHeader;
+export default AuthentificationHeader;

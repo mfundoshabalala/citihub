@@ -5,7 +5,7 @@ import Flex from 'components/shared/Flex';
 import Panel from 'components/shared/Panel';
 import { default as AuthIcon } from 'components/shared/Icon';
 
-const AuthProviderPanel = () => {
+const AuthentificationProviderPanel = () => {
 	return (
 		<Flex className="flex-col items-center gap-y-2">
 			<h3 className="">or continue with these social profiles</h3>
@@ -19,4 +19,4 @@ const AuthProviderPanel = () => {
 	);
 };
 
-export default AuthProviderPanel;
+export default AuthentificationProviderPanel;
