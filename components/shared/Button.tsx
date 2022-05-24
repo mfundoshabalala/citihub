@@ -1,12 +1,5 @@
 import React from 'react';
 
-type ButtonInterface = React.FunctionComponent<{
-	title: string;
-	className?: string;
-	type?: 'button' | 'submit';
-	onClick?: () => void;
-}>;
-
 const Button: ButtonInterface = ({ title, type = 'button', className, onClick }) => {
 	return (
 		<button
