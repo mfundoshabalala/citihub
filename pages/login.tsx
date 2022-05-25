@@ -1,5 +1,6 @@
 //package import
 import React from 'react';
+import Head from 'next/head';
 // type import
 import { GetServerSideProps, NextPage } from 'next';
 // helper import
@@ -9,9 +10,14 @@ import Layout from 'components/Layout';
 import AuthentificationLogin from 'components/layout/AuthentificationLogin';
 
 const Login: NextPage = () => (
-	<Layout>
-		<AuthentificationLogin />
-	</Layout>
+	<>
+		<Head>
+			<title>CiTiHub: Login Account</title>
+		</Head>
+		<Layout>
+			<AuthentificationLogin />
+		</Layout>
+	</>
 );
 
 export default Login;
