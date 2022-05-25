@@ -21,3 +21,14 @@ type ButtonInterface = React.FunctionComponent<{
 type LinksButtonPanelInterface = ChildrenInterface & { Link: LocalLinkInterface } & {
 	Button: ButtonInterface;
 };
+
+type AuthentificationFormInterface = React.FunctionComponent<{
+	page: string;
+	className?: string;
+}>;
+
+type AuthentificationFooterInterface = React.FunctionComponent<{
+	heading: string;
+	title: string;
+	href: string;
+}>;

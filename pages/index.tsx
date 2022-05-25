@@ -27,12 +27,12 @@ const Home: NextPage = () => {
 							<LinksButtonPanel.Link
 								href="/profile"
 								title="profile"
-								className="transition-all duration-300 border-0 active:scale-95 px-8 py-2 font-bold text-white rounded active:shadow-sm shadow-lg min-w-[150px] bg-gradient-to-r from-orange-800 via-orange-700 to-orange-800"
+								className="transition-all duration-300 border-0 active:scale-[0.98] px-8 py-2 font-medium text-white rounded active:shadow-sm shadow-lg min-w-[150px] bg-gradient-to-r from-orange-800 via-orange-700 to-orange-800"
 							/>
 							<LinksButtonPanel.Button
 								title="Logout"
 								onClick={context?.signOut}
-								className="transition-all duration-300 border-0 active:scale-95 px-8 py-2 font-bold text-white rounded active:shadow-sm shadow-lg min-w-[150px] bg-gradient-to-r from-purple-800 via-purple-700 to-purple-800"
+								className="transition-all duration-300 border-0 active:scale-[0.98] px-8 py-2 font-medium text-white rounded active:shadow-sm shadow-lg min-w-[150px] bg-gradient-to-r from-purple-800 via-purple-700 to-purple-800"
 							/>
 						</LinksButtonPanel>
 					</Flex>
@@ -43,12 +43,12 @@ const Home: NextPage = () => {
 						<WelcomeHeader />
 						<LinksButtonPanel>
 							<LinksButtonPanel.Link
-								className="transition-all duration-300 border-0 active:scale-95 px-8 py-2 font-bold text-white rounded active:shadow-sm shadow-lg min-w-[150px] bg-gradient-to-r from-teal-800 via-teal-700 to-teal-800"
+								className="transition-all duration-300 border-0 active:scale-[0.98] px-8 py-2 font-medium text-white rounded active:shadow-sm shadow-lg min-w-[150px] bg-gradient-to-r from-teal-800 via-teal-700 to-teal-800"
 								href="/login"
 								title="Login"
 							/>
 							<LinksButtonPanel.Link
-								className="transition-all duration-300 border-0 active:scale-95 px-8 py-2 font-bold text-white rounded active:shadow-sm shadow-lg min-w-[150px] bg-gradient-to-r from-slate-800 via-slate-700 to-slate-800"
+								className="transition-all duration-300 border-0 active:scale-[0.98] px-8 py-2 font-medium text-white rounded active:shadow-sm shadow-lg min-w-[150px] bg-gradient-to-r from-slate-800 via-slate-700 to-slate-800"
 								href="/register"
 								title="Register"
 							/>

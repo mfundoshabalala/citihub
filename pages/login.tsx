@@ -1,17 +1,23 @@
 //package import
 import React from 'react';
+import Head from 'next/head';
 // type import
 import { GetServerSideProps, NextPage } from 'next';
 // helper import
 import { supabase } from 'lib/client';
 // component import
 import Layout from 'components/Layout';
-import AuthLogin from 'components/layout/AuthLogin';
+import AuthentificationLogin from 'components/layout/AuthentificationLogin';
 
 const Login: NextPage = () => (
-	<Layout>
-		<AuthLogin />
-	</Layout>
+	<>
+		<Head>
+			<title>CiTiHub: Login Account</title>
+		</Head>
+		<Layout>
+			<AuthentificationLogin />
+		</Layout>
+	</>
 );
 
 export default Login;

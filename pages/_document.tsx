@@ -8,7 +8,9 @@ class MyDocument extends Document {
 	override render(): JSX.Element {
 		return (
 			<Html lang="en" className="scroll-smooth">
-				<Head />
+				<Head>
+					<link rel="icon" href="/images/citi-logo.svg" />
+				</Head>
 				<body className="antialiased leading-normal text-zinc-700 caret-transparent">
 					<Main />
 					<NextScript />
