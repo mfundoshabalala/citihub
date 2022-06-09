@@ -6,17 +6,18 @@ import { GetServerSideProps, NextPage } from 'next';
 // helper import
 import { supabase } from 'lib/client';
 // component import
-import Layout from 'components/Layout';
 import AuthentificationRegister from 'components/layout/AuthentificationRegister';
+import SplitScreen from 'components/layout/SplitScreen';
 
 const Register: NextPage = () => (
 	<>
 		<Head>
 			<title>CiTiHub: Register Account</title>
 		</Head>
-		<Layout>
+		<SplitScreen>
+			<>Hello world</>
 			<AuthentificationRegister />
-		</Layout>
+		</SplitScreen>
 	</>
 );
 

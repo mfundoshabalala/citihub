@@ -3,21 +3,17 @@ import React from 'react';
 // component import
 import Flex from 'components/shared/Flex';
 import Panel from 'components/shared/Panel';
-import { default as AuthenticationProviderIcon } from 'components/shared/Icon';
+import ProviderButton from 'components/ProviderButton';
 
-const AuthentificationProviderPanel = () => {
-	return (
-		<Flex className="flex-col items-center gap-y-2">
-			<h3 className="">or continue with these social profiles</h3>
-			<Panel>
-				<AuthenticationProviderIcon icon="linkedin-in" className="hover:ring-blue-600 hover:bg-blue-600" />
-				<AuthenticationProviderIcon icon="github" className="hover:ring-slate-900 hover:bg-slate-900" />
-				<AuthenticationProviderIcon icon="twitter" className="hover:ring-blue-400 hover:bg-blue-400" />
-				<AuthenticationProviderIcon icon="google" className="hover:ring-rose-600 hover:bg-rose-600" />
-				<AuthenticationProviderIcon icon="facebook" className="hover:ring-blue-600 hover:bg-blue-600" />
-			</Panel>
-		</Flex>
-	);
-};
+const AuthentificationProviderPanel = () => (
+	<Flex className="flex-col items-center gap-y-2">
+		<h3 className="">or continue with these social profiles</h3>
+		<Panel>
+			<ProviderButton provider="Github" className="shadow-slate-400 border-slate-400" />
+			<ProviderButton provider="Google" className="shadow-red-300 border-red-300" />
+			<ProviderButton provider="LinkedIn" className="shadow-blue-300 border-blue-300" />
+		</Panel>
+	</Flex>
+);
 
 export default AuthentificationProviderPanel;
