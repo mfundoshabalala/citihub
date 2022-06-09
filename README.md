@@ -87,6 +87,6 @@ $ npm run dev
 
 ## Contact
 
-- Website [your-website.com](https://{your-web-site-link})
-- GitHub [@mfundoshabalala](https://{github.com/mfundoshabalala})
+- Website [your-website.com](https://mfundo.vercel.app)
+- GitHub [@mfundoshabalala](https://github.com/mfundoshabalala)
 - Twitter [@datarist](https://www.twitter.com/datarist)
