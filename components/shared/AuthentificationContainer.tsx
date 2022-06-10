@@ -6,7 +6,7 @@ type AuthentificationContainerInterface = React.FunctionComponent<{
 
 const AuthentificationContainer: AuthentificationContainerInterface = ({ children }) => {
 	return (
-		<section className="h-fit max-w-md md:min-w-[420px] px-6 py-10 mx-auto space-y-6 text-center border shadow-sm rounded-xl">
+		<section className="bg-white h-fit max-w-md md:min-w-[420px] px-6 py-10 mx-auto space-y-6 text-center border shadow-sm rounded-xl">
 			{children}
 		</section>
 	);

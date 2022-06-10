@@ -18,8 +18,10 @@ const Login: NextPage = () => (
 		</Head>
 		<SplitScreen>
 			<>
-				<div className="h-full w-full text-center bg-no-repeat text-white bg-cover brightness-[0.25] bg-[url('/images/login_image.jpg')]"></div>
-				<h1 className="absolute text-3xl font-black tracking-wider text-white bottom-1/4">hred</h1>
+				<div className="h-full w-full text-center bg-no-repeat text-white bg-[position:0] brightness-[0.25] bg-[url('/images/login_image_1.jpg')]"></div>
+				<h1 className="absolute font-sans text-3xl font-black tracking-wider text-white bottom-1/4">
+					Connect with fellow candidates
+				</h1>
 			</>
 			<AuthentificationLogin />
 		</SplitScreen>
