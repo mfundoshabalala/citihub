@@ -17,10 +17,10 @@ const Login: NextPage = () => (
 			<title>CiTiHub: Login Account</title>
 		</Head>
 		<SplitScreen>
-			<div className="text-white text-center">
-				<h1 className="text-5xl font-extrabold">Hello World</h1>
-				<p className="">Alumni portal</p>
-			</div>
+			<>
+				<div className="h-full w-full text-center bg-no-repeat text-white bg-cover brightness-[0.25] bg-[url('/images/login_image.jpg')]"></div>
+				<h1 className="absolute text-3xl font-black tracking-wider text-white bottom-1/4">hred</h1>
+			</>
 			<AuthentificationLogin />
 		</SplitScreen>
 	</>

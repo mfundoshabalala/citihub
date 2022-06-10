@@ -8,10 +8,10 @@ import ProviderButton from 'components/ProviderButton';
 const AuthentificationProviderPanel = () => (
 	<Flex className="flex-col items-center gap-y-2">
 		<h3 className="">or continue with these social profiles</h3>
-		<Panel>
-			<ProviderButton provider="Github" className="shadow-slate-400 border-slate-400" />
-			<ProviderButton provider="Google" className="shadow-red-300 border-red-300" />
-			<ProviderButton provider="LinkedIn" className="shadow-blue-300 border-blue-300" />
+		<Panel className="transition-all duration-700">
+			<ProviderButton provider="Github" className="shadow-slate-400 hover:border-slate-400" />
+			<ProviderButton provider="Google" className="shadow-red-300 hover:border-red-300" />
+			<ProviderButton provider="LinkedIn" className="shadow-blue-300 hover:border-blue-300" />
 		</Panel>
 	</Flex>
 );
