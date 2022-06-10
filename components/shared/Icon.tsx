@@ -29,7 +29,7 @@ const Icon: IconInterface = ({ icon, style = 'brands', href, size, className }) 
 	return (
 		<a
 			onClick={(event) => handleProviderLogin(event, icon as Provider)}
-			className={`${className} px-2 py-1 border rounded-full drop-shadow cursor-pointer hover:border-teal-500`}
+			className={`${className} ring-2 ring-transparent active:scale-[0.95] active:ring-offset-1 transition-all duration-500 hover:text-white px-2 py-1 border rounded-full shadow-md hover:shadow-sm active:shadow-none cursor-pointer hover:border-slate-50`}
 		>
 			<i className={`fa-${style} fa-${icon} fa-${size}`} />
 		</a>

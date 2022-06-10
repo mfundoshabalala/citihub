@@ -3,16 +3,15 @@ import React from 'react';
 // component import
 import Flex from 'components/shared/Flex';
 import Panel from 'components/shared/Panel';
-import { default as AuthIcon } from 'components/shared/Icon';
+import ProviderButton from 'components/ProviderButton';
 
 const AuthentificationProviderPanel = () => (
 	<Flex className="flex-col items-center gap-y-2">
 		<h3 className="">or continue with these social profiles</h3>
 		<Panel>
-			<AuthIcon icon="google" />
-			<AuthIcon icon="github" />
-			<AuthIcon icon="twitter" />
-			<AuthIcon icon="facebook" />
+			<ProviderButton provider="Github" className="shadow-slate-400 border-slate-400" />
+			<ProviderButton provider="Google" className="shadow-red-300 border-red-300" />
+			<ProviderButton provider="LinkedIn" className="shadow-blue-300 border-blue-300" />
 		</Panel>
 	</Flex>
 );

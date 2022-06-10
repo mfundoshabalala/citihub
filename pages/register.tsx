@@ -1,17 +1,24 @@
 //package import
 import React from 'react';
+import Head from 'next/head';
 // type import
 import { GetServerSideProps, NextPage } from 'next';
 // helper import
 import { supabase } from 'lib/client';
 // component import
-import Layout from 'components/Layout';
 import AuthentificationRegister from 'components/layout/AuthentificationRegister';
+import SplitScreen from 'components/layout/SplitScreen';
 
 const Register: NextPage = () => (
-	<Layout>
-		<AuthentificationRegister />
-	</Layout>
+	<>
+		<Head>
+			<title>CiTiHub: Register Account</title>
+		</Head>
+		<SplitScreen>
+			<>Hello world</>
+			<AuthentificationRegister />
+		</SplitScreen>
+	</>
 );
 
 export default Register;
