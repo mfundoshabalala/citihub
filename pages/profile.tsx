@@ -12,17 +12,39 @@ import ProfileCandidateInformation from 'components/layout/ProfileCandidateInfor
 
 const Profile: NextPage = () => {
 	const router = useRouter();
+
+	const getProfile = async () => {
+		try {
+			const user = supabase.auth.user();
+			let { data, error, status } = await supabase
+				.from('profiles')
+				.select(`email`)
+				.eq('id', user?.id)
+				.single();
+
+			if (error && status !== 406) {
+				throw error;
+			}
+
+			if (data) {
+				console.log(data, status);
+			}
+		} catch (error) {
+			console.log(error);
+		}
+	};
+
 	useEffect(() => {
 		const user = supabase.auth.user();
-		console.log(user?.user_metadata);
+		console.log(user?.user_metadata, getProfile());
 		if (!user) {
-			router.push('/login');
+			router.push('/auth/login');
 		}
 	}, [router]);
 
 	return (
 		<ProfileLayout>
-			<section className="h-full z-20 my-32">
+			<section className="z-20 h-full my-32">
 				<ProfileHeader />
 				<ProfileCandidateInformation />
 			</section>

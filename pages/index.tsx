@@ -44,12 +44,12 @@ const Home: NextPage = () => {
 						<LinksButtonPanel>
 							<LinksButtonPanel.Link
 								className="transition-all duration-300 border-0 active:scale-[0.98] px-8 py-2 font-medium text-white rounded active:shadow-sm shadow-lg min-w-[150px] bg-gradient-to-r from-teal-800 via-teal-700 to-teal-800"
-								href="/login"
+								href="/auth/login"
 								title="Login"
 							/>
 							<LinksButtonPanel.Link
 								className="transition-all duration-300 border-0 active:scale-[0.98] px-8 py-2 font-medium text-white rounded active:shadow-sm shadow-lg min-w-[150px] bg-gradient-to-r from-slate-800 via-slate-700 to-slate-800"
-								href="/register"
+								href="/auth/register"
 								title="Register"
 							/>
 						</LinksButtonPanel>
